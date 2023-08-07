@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import Login from "./Login";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -60,6 +61,11 @@ export default function Navbar() {
           <Link href="/gallery" onClick={() => setNavbar(!navbar)}>
             <li className="text-xl px-6 text-center py-5 hover:bg-black md:hover:bg bg-transparent ">
               Gallery
+            </li>
+          </Link>
+          <Link href="/login" onClick={() => setNavbar(!navbar)}>
+            <li className="text-xl px-6 text-center py-5 hover:bg-black md:hover:bg bg-transparent ">
+              Login
             </li>
           </Link>
         </ul>
