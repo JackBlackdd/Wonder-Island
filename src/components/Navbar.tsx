@@ -65,7 +65,7 @@ export default function Navbar() {
           </Link>
           <Link href="/login" onClick={() => setNavbar(!navbar)}>
             <li className="text-xl px-6 text-center py-5 hover:bg-black md:hover:bg bg-transparent ">
-              Login
+              <Login />
             </li>
           </Link>
         </ul>

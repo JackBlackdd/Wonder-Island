@@ -27,15 +27,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <SessionProvider session={session}>
           <Navbar />
-          {!session ? (
-            <div className="mx-4 mt-10 py-10 text-center text-2xl md:text-4xl text">
-              Test
-            </div>
-          ) : (
-            <div className="mx-4 mt-10 py-10 text-center text-2xl md:text-4xl text">
-              Welcome to your session
-            </div>
-          )}
+          
           {children}
           <Footer />
         </SessionProvider>
